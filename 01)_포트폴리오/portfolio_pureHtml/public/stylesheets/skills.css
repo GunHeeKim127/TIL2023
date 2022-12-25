@@ -1,0 +1,75 @@
+#SCB{
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#frontend{
+    margin-left: 2%;
+    margin-right:2%;
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+#frontend #scss{
+    width: 150px;
+    height: 100px;
+}
+#frontend #jquery{
+    width: 150px;
+    height: 100px;
+}
+#html,#css,#js{
+    margin: 8px 25px;
+    width: 70px;
+    height: 100px;
+}
+#backend{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    height: 450px;
+}
+#mongodb, #mariadb,#git-desktop,#git{
+    margin: 8px 25px;
+    width: 200px;
+    height: 65px;
+}
+#mySQL{
+    width: 200px;
+    height: 150px;
+}
+body{
+    margin: 0;
+}
+#versionControl{
+    background-color: white;
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    height: 450px;
+    margin-left: 2%;
+    display: flex;
+}
+#git{
+    margin: 8px 25px;
+    width: 150px;
+    height: 65px;
+}
+#ejs{
+    margin: 8px 25px;
+    width: 75px;
+    height: 52px;
+}
+#nodejs{
+    margin: 8px 25px;
+    width: 150px;
+    height: 65px;
+}

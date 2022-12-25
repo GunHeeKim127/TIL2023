@@ -1,0 +1,47 @@
+.img1{
+    width: 50px;
+    height: 50px;
+}
+.img2{
+    width: 60px;
+    height: 50px;
+}
+.Container{
+    display: flex;
+    width: 30%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+#myInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.rightContainer div{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    align-items: center;
+}
+body{
+    overflow: hidden;
+}
+#email{
+    width: 65px;
+    height: 50px;
+}
+#location{
+    width: 60px;
+    height: 60px;
+}
+#study{
+    width: 100px;
+    height: 100px;
+}
