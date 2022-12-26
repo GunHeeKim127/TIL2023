@@ -38,12 +38,32 @@ npm install html
 5.npm install path : path 모듈은 폴더와 파일의 경로를 지정해주는 모듈이다.
 
 6.npm install morgan : 서버의 로그 관리를 위한 모듈이다.
-
+<br><br>
 # gitignore 작성
 1. node-modules, gitattrbuts, package.json
-
+<br><br>
 # crud를 위한 폴더 정리
 1. app.js에서 backend폴더의 router폴더 세팅 및 router에서 rest API사용시 app.js에서 불러오기 가능
 2. path를 이용하여 router에서 frontend폴더의 view폴더에 들어있는 html파일 로더 가능
 3. router에 모든 역할을 두는 것이 아닌 controller폴더를 만들어 service 및 controlloer 기능을 가진 파일 저장
 4. app.js에서 public의 파일을 사용할 수 있도록 app.use 세팅
+<br><br>
+
+# app.js의 순서
+1) app.js가 가장 먼저 실행 → 
+2) 모듈이 설치 
+3) const app = express()를 실행 // express를 app이라는 변수에 선언
+4) 포트 설정 
+5) index.html의 상대적 위치 선언 
+6) 화면을 구성하는 엔진을 HTML로 선언 
+7) app.use(logger('dev'));
+   // express의 안에 있는 json을 사용하겠다고 선언
+   app.use(express.json());
+   // 나중에 더 찾기
+   app.use(express.urlencoded({ extended : false}));
+   실행 이 부분은 좀더 찾아보기 
+8) /frontend/public를 정규화 시킨다. 
+9) mysql의 선언
+10) 포트 정보보기 
+11) index.js를 indexRouter라는 변수에 선언
+12) 화면을 렌더링 실시
