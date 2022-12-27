@@ -15,6 +15,8 @@ app.use(logger('dev'));                                                 //morgan
 app.use(express.json());                                                //json을 보내고 받기 위해 사용
 app.use(express.urlencoded({ extended: false }));                       //찾아보기
 app.use(express.static(path.join(__dirname, '/frontend/public')));      //public폴더 내의 css, 이미지, javascript를 사용하기 위한 정규 폴더 지정
+console.log(__dirname);
+
 app.use(myconnection(mysql,{
     host:'localhost',
     user:'root',
