@@ -27,3 +27,9 @@ git commit -m "remove source files"
 ```
 <br>
 
+### 4) Error: ER_NO_SUCH_TABLE: Table 'user_test1.user_test1' doesn't exist 오류시
+```js
+ //'.' 앞의 이름은 database명 위의 이름은 테이블 명
+ //현재 mysql에 데이터베이스명(현재 폴더에서 ./backend/connect/mariadb.js의 7번째줄)과 테이블명(현재 폴더에서 ./backend/connect/mariadb.js의 11번째줄)을 찾은후 적용
+
+ ```

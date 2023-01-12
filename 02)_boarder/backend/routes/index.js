@@ -4,14 +4,13 @@ var router = express.Router();
 //require maria.js
 const maria = require('../connect/mariadb');
 
-router.get('/',(req,res)=>
-{
-    if(status===200){
-    res.render('login', {content: '로그인'});
-    }
-    else{
-        console.log('status:',500);
-    }
-})
+router.get('/api/user', function(req, res){
+    connection.query('SELECT * FROM user', function(err, rows) {
+    if(err) throw err;
+    
+    console.log('The solution is: ', rows);
+    res.send(rows);
+    });
+    });
 
 module.exports=router
