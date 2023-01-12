@@ -12,8 +12,8 @@ router.get('/', function(req, res){
     if(err) throw err;
     
     console.log('The solution is: ', rows);
-    
-    res.sendFile(path.join(__dirname+'../../frontend/view/index.html'),{rows:rows,indexSuccess:true,message:err});
+    console.log(path.join(__dirname+'../../frontend/view/index.html'))
+    res.sendFile(path.join(__dirname+'../../../frontend/view/index.html'),{rows:rows,indexSuccess:true,message:err});
     });
    
     });
