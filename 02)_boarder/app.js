@@ -4,18 +4,21 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-var indexRouter = require('./backend/routes/index');
-// var usersRouter = require('./routes/users');
+var engins = require('consolidate');
+var mysql =require('mysql')
 
 var app = express();
 
+var dotenv=require("dotenv");
+dotenv.config();
+
 //mariaDB connect
-const maria = require('./backend/connect/mariadb');
-// maria.connect();
+var maria = require('./backend/connect/mariadb')
+
 
 //view engine setup
-app.set('view',path.join(__dirname,'view'));
+app.set('views',path.join(__dirname,'frontend/view'));
+app.engine('html',engins.mustache);
 app.set('view engine','html');
 
 app.use(logger('dev'));
@@ -23,6 +26,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'frontend/public')));
+
+//router connect
+const indexRouter = require('./backend/routes/index.js');
+
+app.use('/',indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

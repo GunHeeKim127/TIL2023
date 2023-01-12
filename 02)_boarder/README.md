@@ -31,5 +31,15 @@ git commit -m "remove source files"
 ```js
  //'.' 앞의 이름은 database명 위의 이름은 테이블 명
  //현재 mysql에 데이터베이스명(현재 폴더에서 ./backend/connect/mariadb.js의 7번째줄)과 테이블명(현재 폴더에서 ./backend/connect/mariadb.js의 11번째줄)을 찾은후 적용
-
  ```
+
+### 5) Cannot find module 'html'
+```js
+//html 모듈이 없는것이 아니라 html을 읽지 못하는것 같다.
+//아래 모듈 둘을 설치했을때 (Module "html5" does not provide a view engine.)이란 오류 발생
+npm i html
+npm i html5
+//아래 두개의 모듈을 설치하고 require하고 engine 설정 했을때 오류 안뜸
+npm i mustache
+npm i consolidate
+```

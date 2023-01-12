@@ -1,16 +1,21 @@
 var express = require('express');
+var path = require("path")
 var router = express.Router();
 
 //require maria.js
-const maria = require('../connect/mariadb');
+const maria = require('../connect/mariadb.js');
 
-router.get('/api/user', function(req, res){
-    connection.query('SELECT * FROM user', function(err, rows) {
+
+router.get('/', function(req, res){
+
+    maria.query('SELECT * FROM user', function(err, rows) {
     if(err) throw err;
     
     console.log('The solution is: ', rows);
-    res.send(rows);
+    
+    res.sendFile(path.join(__dirname+'../../frontend/view/index.html'),{rows:rows,indexSuccess:true,message:err});
     });
+   
     });
-
+  
 module.exports=router
