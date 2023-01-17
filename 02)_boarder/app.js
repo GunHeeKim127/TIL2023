@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var engins = require('consolidate');
 var mysql =require('mysql')
+var bodyparser =require('body-parser')
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'frontend/public')));
+app.use(bodyparser.json());
 
 //router connect
 const indexRouter = require('./backend/routes/index.js');

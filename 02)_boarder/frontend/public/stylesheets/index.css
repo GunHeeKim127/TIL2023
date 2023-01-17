@@ -1,0 +1,55 @@
+
+#boardList{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 80%;
+    display : flex;
+    justify-content : center;
+}
+#boardList a{
+    margin : 5px auto;
+}
+#title{
+    text-align: center;
+    margin: 20px 0;
+    font-size : 32px;
+    font-weight: 600;
+}
+.list{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.list p{
+    margin: 5px auto;
+}
+#boarderContainer{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.command{
+    display: flex;
+    width: 100%;
+}
+.command div{
+    margin: 5px auto;
+    width: 25%;
+}
+.command p{
+    text-align: center;
+    min-width: 25%;
+}
+#num, #user, #date{
+    text-align: center;
+}
+#demo{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
