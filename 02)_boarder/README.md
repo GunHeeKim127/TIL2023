@@ -43,3 +43,14 @@ npm i html5
 npm i mustache
 npm i consolidate
 ```
+### 6) syntaxerror: unexpected token '<', "<!doctype "... is not valid json
+```js
+npm i body-parser //body-parser 다운 및 import
+```
+윗단계 이후 app.js에서 app.use(bodyparser.json()); 를 한다.
+하지만 동일 오류가 뜸
+
+```js
+frontend의 javascript에서 index.js의 fetch부분에서 .then((res)=>res.json())을 .then((res)=>res)로 바꿈
+```
+오류해결
