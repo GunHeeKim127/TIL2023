@@ -44,7 +44,7 @@
     text-align: center;
     min-width: 25%;
 }
-#num, #user, #date{
+#num, #user, #date, #subject{
     text-align: center;
 }
 #demo{

@@ -19,7 +19,7 @@ app.use(myconnection(mysql,{
     host:'localhost',
     user:'root',
     password:'0000',
-    port:3600,
+    port:4000,
     database:'user_test1'
 }))                                                                     //mysql 연결
 
@@ -28,11 +28,18 @@ app.listen(app.get('port'),()=>
     console.log('listening on port',app.get('port'))
 })
 
-// app.get('/', function(req, res, next) {
-//     res.sendFile(__dirname+'/frontend/view/index.html');
-//   });
+app.get('/', function(req, res, next) {
+    res.sendFile(__dirname+'/frontend/view/index.html');
+  });
 
 var indexRouter = require('./backend/router/index.js');                 //router의 index.js를 불러옴
 app.use('/', indexRouter);                                              //index.js에서 랜더시켜주는 index.html을 홈페이지(처음 열리는 페이지)로 지정
 
+// app.get('/', function (req, res) {
+//   res.send('Hello World!'); // This will serve your request to '/'.
+// });
+
+// app.listen(4000, function () {
+//   console.log('Example app listening on port 8000!');
+//  });
 module.exports = app;                                                   //app을 모듈화
