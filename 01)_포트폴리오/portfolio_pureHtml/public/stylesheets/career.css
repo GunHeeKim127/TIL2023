@@ -1,4 +1,4 @@
-#leftContainer{
+/* #leftContainer{
     width: 40%;
     height: 100%;
     left : 0;
@@ -22,7 +22,7 @@
     border-bottom: 1px solid rgba(135,135,135,1);
     padding-bottom: 30px;
 }
-#heaventreeimg,#hustarimg,#hanjungimg,#jaewonimg{
+#heaventreeimg,#hustarimg,#hanjungimg,#jaewonimg,#starlawfirmimg{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -31,4 +31,88 @@
 #jaewonimg img{
     width: 100%;
     height: 100%;
+}
+#starlawfirmimg img{
+    margin-right: 1%;
+} */
+
+/* 컨테이너 */
+#careerScreen{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px 40px;
+  box-sizing: border-box;
+}
+
+/* 섹션 타이틀 */
+#careerScreen > div:first-child h2{
+  margin: 8px 0 24px;
+  letter-spacing: .04em;
+}
+
+/* 회사 한 묶음(왼쪽 로고 + 오른쪽 설명) */
+.career-item{
+  display: grid;
+  grid-template-columns: 40% 1fr;     /* 왼 40% / 오른 60% */
+  gap: 24px;
+  align-items: start;
+  /* padding: 24px 0; */
+  /* border-top: 1px solid rgba(135,135,135,1); */
+}
+
+/* 첫 행은 위 보더 제거 */
+.career-item:first-of-type{
+  border-top: 0;
+}
+
+/* 왼쪽 로고 칸 */
+.ci-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.ci-left img{
+  max-width: 75%;          /* 로고가 칸 안에서 균일하게 */
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 오른쪽 내용 칸 */
+.ci-right{
+  border-left: 1px solid rgba(135,135,135,1);
+  padding-left: 30px;
+}
+.ci-right h3{
+  margin: 0 0 6px;
+}
+.ci-right p{
+  margin: 0 0 8px;
+}
+.ci-right li{
+  margin: 4px 0 4px 18px;
+}
+
+/* 소제목(프로젝트) */
+.ci-right h4{
+  margin: 18px 0 6px;
+  font-weight: 700;
+}
+
+/* 반응형: 모바일에서는 1열로 쌓기 */
+@media (max-width: 768px){
+  .career-item{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .ci-right{
+    border-left: 0;
+    padding-left: 0;
+  }
+  .ci-left img{
+    max-width: 220px;
+    max-height: 100px;
+  }
 }
