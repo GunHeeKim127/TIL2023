@@ -75,6 +75,19 @@ body{
 } */
 
 /* ===== 공통 레이아웃 ===== */
+/* skills.css (임베드된 문서가 로드하는 CSS) */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: visible;  /* 내부 스크롤 막음 */
+  height: auto;
+}
+
+/* #SCB, #skillsContainer 등에 height 고정값이 있으면 제거 */
+#SCB, #skillsContainer {
+  height: auto;       /* 고정 높이 사용하지 않기 */
+}
+
 body { margin: 0; }
 
 #SCB{
