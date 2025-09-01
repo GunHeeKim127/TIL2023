@@ -40,8 +40,13 @@ a {
 }
 
 /* 태블릿 세로 */
+@media (max-width: 1024px){
+  #skills object{ height: 1060px; }
+}
+
+/* 태블릿 세로 */
 @media (max-width: 1010px){
-  #skills object{ height: 1040px; }
+  #skills object{ height: 1050px; }
 }
 
 /* 태블릿 세로 */
