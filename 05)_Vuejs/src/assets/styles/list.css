@@ -1,0 +1,12 @@
+/* src/assets/styles/list.css */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.empty {
+  color: #888;
+  font-style: italic;
+  margin-top: 10px;
+}

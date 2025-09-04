@@ -1,0 +1,38 @@
+/* src/assets/styles/item.css */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.item .content {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.item button {
+  padding: 6px 10px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.item button:hover {
+  background-color: #d94444;
+}

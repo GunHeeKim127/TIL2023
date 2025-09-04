@@ -1,0 +1,27 @@
+/* src/assets/styles/form.css */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #42b883;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+}
+
+.form button:hover {
+  background-color: #2c8a66;
+}
