@@ -1,8 +1,13 @@
 /* src/assets/styles/form.css */
-.form {
+form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width : 50%;
+}
+
+.form{
+  padding-right: 10px;
 }
 
 .form input,

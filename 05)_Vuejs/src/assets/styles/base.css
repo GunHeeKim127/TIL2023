@@ -15,3 +15,8 @@ button {
   cursor: pointer;
   transition: 0.2s;
 }
+
+#big{
+  display: flex;
+  
+}

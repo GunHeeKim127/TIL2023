@@ -1,0 +1,10 @@
+.board {
+  width: 640px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.board hr { margin: 20px 0; }
+.board h1 { text-align: center; margin-bottom: 16px; }
