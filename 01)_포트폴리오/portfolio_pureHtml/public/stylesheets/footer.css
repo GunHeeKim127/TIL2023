@@ -15,3 +15,10 @@ body{
     margin: 0;
     padding: 0;
 }
+div {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}

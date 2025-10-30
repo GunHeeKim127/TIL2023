@@ -8,6 +8,13 @@ body{
 li {
     list-style-type: none;
   }
+div {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
 #project{
     display: flex;
     flex-direction: column;

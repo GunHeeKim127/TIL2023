@@ -76,6 +76,13 @@ body{
 
 /* ===== 공통 레이아웃 ===== */
 /* skills.css (임베드된 문서가 로드하는 CSS) */
+div {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
 html, body {
   margin: 0;
   padding: 0;
