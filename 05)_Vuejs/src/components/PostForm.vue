@@ -1,37 +1,44 @@
-<!-- src/components/PostForm.vue -->
 <template>
-  <form class="form" @submit.prevent="$emit('submit')">
-    <input
-      :value="title"
-      @input="$emit('update:title', $event.target.value)"
-      placeholder="제목"
+  <v-form @submit.prevent="$emit('submit')" class="mb-4">
+    <v-text-field
+      :model-value="title"
+      @update:model-value="$emit('update:title', $event)"
+      label="제목"
+      variant="outlined"
+      density="comfortable"
+      :error="Boolean(errors.title)"
+      :error-messages="errors.title"
+      class="mb-4"
+      clearable
     />
-    <textarea
-      :value="content"
-      @input="$emit('update:content', $event.target.value)"
-      placeholder="내용"
-    ></textarea>
 
-    <div class="errors" v-if="hasErrors">
-      <p v-for="(msg, key) in errors" :key="key">{{ msg }}</p>
+    <v-textarea
+      :model-value="content"
+      @update:model-value="$emit('update:content', $event)"
+      label="내용"
+      variant="outlined"
+      auto-grow
+      rows="3"
+      :error="Boolean(errors.content)"
+      :error-messages="errors.content"
+      class="mb-4"
+      clearable
+    />
+
+    <div class="d-flex justify-end">
+      <v-btn type="submit" color="primary" prepend-icon="mdi-plus">
+        등록
+      </v-btn>
     </div>
-
-    <button type="submit">등록</button>
-  </form>
+  </v-form>
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import '../assets/styles/form.css'
-
-const props = defineProps({
+defineProps({
   title: { type: String, default: '' },
   content: { type: String, default: '' },
   errors: { type: Object, default: () => ({}) }
 })
 
 defineEmits(['update:title', 'update:content', 'submit'])
-
-const { title, content, errors } = props
-const hasErrors = computed(() => Object.keys(errors || {}).length > 0)
 </script>
