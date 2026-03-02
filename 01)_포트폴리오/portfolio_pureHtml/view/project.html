@@ -9,50 +9,160 @@
 </head>
 <body>
     <div class="main">
-   <div id="project"> 
-    <h2 style="width: 100%; text-align:center;">PROJECTS</h2>
-    <div id="project_dermy1">
-        <div id="project_title">포트폴리오 사이트</div>
-        <p style="font-size: 16px; color: rgba(150,150,150,1); text-align: center; width: 100%; margin-top: 0;">2022.12</p>
-        <div style="display:flex;">
-        <div id="project_img_slider">
-            <ul class="slides">
-                <li><img src="../public/images/portfolio1.png"/></li>
-                <li><img src="../public/images/portfolio2.png"/></li>
-                <li><img src="../public/images/portfolio3.png"/></li>
-            </ul>
-            <div style="display:flex; justify-content: center; width:100%; height:60px;position: absolute;bottom: 0;">
+        <div id="project"> 
+            <h2 style="width: 100%; text-align:center;">PROJECTS</h2>
+            <div id="project_dermy1">
+                <div id="project_title">포트폴리오 사이트</div>
+                <p style="font-size: 16px; color: rgba(150,150,150,1); text-align: center; width: 100%; margin-top: 0;">2022.12</p>
+                <div style="display:flex;">
+                <div class="project_img_slider">
+                    <ul class="slides">
+                        <li><img src="../public/images/portfolio1.png"/></li>
+                        <li><img src="../public/images/portfolio2.png"/></li>
+                        <li><img src="../public/images/portfolio3.png"/></li>
+                    </ul>
+                    <div style="display:flex; justify-content: center; width:100%; height:60px;position: absolute;bottom: 0;">
                 
-                    <!-- &lang: 왼쪽 방향 화살표
-                    &rang: 오른쪽 방향 화살표 -->
-                    <span class="prev">&lang;</span>  
-                    <span class="next">&rang;</span>
+                        <!-- &lang: 왼쪽 방향 화살표
+                        &rang: 오른쪽 방향 화살표 -->
+                        <span class="prev">&lang;</span>  
+                        <span class="next">&rang;</span>
                 
+                    </div>
+                </div>
+                <div id="rightContainer">
+                    <div id="project_information1" style="overflow: auto;text-overflow: ellipsis;">
+                        <p>
+                        저의 포토폴리오를 사이트로 만든 사이트입니다.
+                        저의 커리어 및 여러 프로젝트를 설명해놓은 사이트로 간단한 언어를 사용하여
+                        만든 사이트입니다.<br><br>
+                        <a style="color: blue;">netlify</a>를 활용하여 배포를 해봤다는것만으로 의미가 있지만 제가 이때까지
+                        해온 것들을 정리하는데 의미가 있습니다.<br><br>
+                        웹의 기본언어인 <a style="color: blue;">html, css, 바닐라JS</a>를 기준으로 <a style="color: blue;">jquery</a>로 각 페이지를 <a style="color: blue;">import</a>하여 연동하였습니다.
+                        </p>
+                        <button id="portfoliosite" style="background-color: brown; width: 100px; height: 50px; color: white; border:none; border-radius: 25px;" onclick="gotoLink();">자세히보기</button>
+                    </div>
+                    <div id="project_information2">
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">주요기능</div><p style="margin:0 0 0 20px;">자신에 대한 설명, 프로젝트에 대한 설명, 자신의 커리어</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Frontend</div><p style="margin:0 0 0 20px;">html, css, js</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Deployment</div><p style="margin:0 0 0 20px;">netlify</p></div>
+                    </div>
+                </div>
             </div>
+            <div id="project_dermy2">
+                <div id="project_title">회사사이트 유지보수</div>
+                <p style="font-size: 16px; color: rgba(150,150,150,1); text-align: center; width: 100%; margin-top: 0;">2024.11</p>
+                <div style="display:flex;">
+                <div class="project_img_slider">
+                    <ul class="slides">
+                        <li><img src="../public/images/starlaw/star_law_main_top.jpg"/></li>
+                        <li><img src="../public/images/starlaw/star_law_main_slide.jpg"/></li>
+                        <li><img src="../public/images/starlaw/star_law_main_footer.jpg"/></li>
+                    </ul>
+                    <div style="display:flex; justify-content: center; width:100%; height:60px;position: absolute;bottom: 0;">
+                
+                        <!-- &lang: 왼쪽 방향 화살표
+                        &rang: 오른쪽 방향 화살표 -->
+                        <span class="prev">&lang;</span>  
+                        <span class="next">&rang;</span>
+                
+                    </div>
+                </div>
+                <div id="rightContainer">
+                    <div id="project_information1" style="overflow: auto;text-overflow: ellipsis;">
+                        <p>
+                        레이아웃 PHP언어를 React언어로 포팅한 페이지입니다.
+                        고객이 원하는 법적인 문제와 회사를 홍보하는 차원에서 만들어졌으며 해당 페이지를 제작할때에도 법적인 용어들을 신경썻어야 되었습니다.<br><br>
+                        <a style="color: blue;">Docker, AWS(Amplify,EC2)</a>를 활용하여 배포를 해봤다는것만으로 의미가 있지만 제가 이때까지
+                        해온 것들을 정리하는데 의미가 있습니다.<br><br>
+                        웹은 <a style="color: blue;">React, Typescript, css, Next/js</a>를 사용하여 각 페이지를 <a style="color: blue;">import</a>하여 연동하였습니다.
+                        또한 <a style="color: blue;">SEO(검색엔진최적화)</a>에도 신경을 써서 만들었습니다.
+                        </p>
+                        <button id="portfoliosite" style="background-color: brown; width: 100px; height: 50px; color: white; border:none; border-radius: 25px;" onclick="starmainLink();">자세히보기</button>
+                    </div>
+                    <div id="project_information2">
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">주요기능</div><p style="margin:0 0 0 20px;">각 컨텐츠에 대한 내용 및 각 사무소 홍보</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Frontend</div><p style="margin:0 0 0 20px;"> React, MUI, Typescript, css</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Deployment</div><p style="margin:0 0 0 20px;">Docker, AWS</p></div>
+                    </div>
+                </div>
             </div>
-            
-        <div id="rightContainer">
-        <div id="project_information1" style="overflow: auto;text-overflow: ellipsis;">
-            <p>
-            저의 포토폴리오를 사이트로 만든 사이트입니다.
-            저의 커리어 및 여러 프로젝트를 설명해놓은 사이트로 간단한 언어를 사용하여
-            만든 사이트입니다.<br><br>
-            <a style="color: blue;">netlify</a>를 활용하여 배포를 해봤다는것만으로 의미가 있지만 제가 이때까지
-            해온 것들을 정리하는데 의미가 있습니다.<br><br>
-            웹의 기본언어인 <a style="color: blue;">html, css, 바닐라JS</a>를 기준으로 <a style="color: blue;">jquery</a>로 각 페이지를 <a style="color: blue;">import</a>하여 연동하였습니다.
-            </p>
-            <button id="portfoliosite" style="background-color: brown; width: 100px; height: 50px; color: white; border:none; border-radius: 25px;" onclick="gotoLink();">자세히보기</button>
-        </div>
-        <div id="project_information2">
-            <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">주요기능</div><p style="margin:0 0 0 20px;">자신에 대한 설명, 프로젝트에 대한 설명, 자신의 커리어</p></div>
-            <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Frontend</div><p style="margin:0 0 0 20px;">html, css, js</p></div>
-            <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Deployment</div><p style="margin:0 0 0 20px;">netlify</p></div>
-        </div>
+            <div id="project_dermy3">
+                <div id="project_title">성공사례큐레이션 제작</div>
+                <p style="font-size: 16px; color: rgba(150,150,150,1); text-align: center; width: 100%; margin-top: 0;">2024.08 ~ 2024.11</p>
+                <div style="display:flex;">
+                <div class="project_img_slider">
+                    <ul class="slides">
+                        <li><img src="../public/images/starlaw/curation_check.png"/></li>
+                        <li><img src="../public/images/starlaw/curation_search.jpg"/></li>
+                        <li><img src="../public/images/starlaw/curation_mypage.jpg"/></li>
+                    </ul>
+                    <div style="display:flex; justify-content: center; width:100%; height:60px;position: absolute;bottom: 0;">
+                
+                        <!-- &lang: 왼쪽 방향 화살표
+                        &rang: 오른쪽 방향 화살표 -->
+                        <span class="prev">&lang;</span>  
+                        <span class="next">&rang;</span>
+                
+                    </div>
+                </div>
+                <div id="rightContainer">
+                    <div id="project_information1" style="overflow: auto;text-overflow: ellipsis;">
+                        <p>
+                        <a style="color: blue;">FingerPrint</a>를 활용하여 고객의 기기를 파악하여 개인마다 고유한 아이디를 부여하여 개인마다 필요하다고 생각되는 서비스를 나열하여 페이지의 나열을 변경하게 개발하였습니다. 마이페이지를 만들어 각 사용자의 
+                        고객이 원하는 법적인 문제와 회사를 홍보하는 차원에서 만들어졌으며 해당 페이지를 제작할때에도 법적인 용어들을 신경썻어야 되었습니다.<br><br>
+                        <a style="color: blue;">Docker, AWS(Amplify,EC2)</a>를 활용하여 배포를 해봤다는것만으로 의미가 있지만 제가 이때까지
+                        해온 것들을 정리하는데 의미가 있습니다.<br><br>
+                        웹은 <a style="color: blue;">React, Typescript, css, Next.js, FingerPrint</a>를 사용하여 각 페이지를 <a style="color: blue;">import</a>하여 연동하였습니다.
+                        또한 <a style="color: blue;">SEO(검색엔진최적화)</a>에도 신경을 써서 만들었습니다.
+                        </p>
+                    </div>
+                    <div id="project_information2">
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">주요기능</div><p style="margin:0 0 0 20px;">각 컨텐츠에 대한 내용 및 각 사무소 홍보</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Frontend</div><p style="margin:0 0 0 20px;"> React, MUI, Typescript, css</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Deployment</div><p style="margin:0 0 0 20px;">Docker, AWS</p></div>
+                    </div>
+                </div>
+            </div>
+            <div id="project_dermy4">
+                <div id="project_title">리본회생 자격확인 페이지 제작</div>
+                <p style="font-size: 16px; color: rgba(150,150,150,1); text-align: center; width: 100%; margin-top: 0;">2024.11 ~ 2024.12</p>
+                <div style="display:flex;">
+                <div class="project_img_slider">
+                    <ul class="slides">
+                        <li><img src="../public/images/starlaw/qualification_page.jpg"/></li>
+                        <li><img src="../public/images/starlaw/qualification_confirmation.jpg"/></li>
+                    </ul>
+                    <div style="display:flex; justify-content: center; width:100%; height:60px;position: absolute;bottom: 0;">
+                
+                        <!-- &lang: 왼쪽 방향 화살표
+                        &rang: 오른쪽 방향 화살표 -->
+                        <span class="prev">&lang;</span>  
+                        <span class="next">&rang;</span>
+                
+                    </div>
+                </div>
+                <div id="rightContainer">
+                    <div id="project_information1" style="overflow: auto;text-overflow: ellipsis;">
+                        <p>
+                        고객이 개인회생 자격이 있는지 아니면 개인파산인지 둘 다 아닌지에 따라 해당 페이지의 구성이 달라지는 사이트로 이동하게 설계했습니다.
+                        또한 선택할 때 얼마나 진행되었는지 확인시켜주기 위해 상단에 진행바를 배치했습니다.   <br><br>
+                        <a style="color: blue;">Docker, AWS(Amplify,EC2)</a>를 활용하여 배포를 했습니다.<br><br>
+                        웹은 <a style="color: blue;">React, Typescript, css, Next.js, FingerPrint</a>를 사용하여 각 페이지를 <a style="color: blue;">import</a>하여 연동하였습니다.
+                        또한 <a style="color: blue;">SEO(검색엔진최적화)</a>에도 신경을 써서 만들었습니다.
+                        </p>
+                        <button id="portfoliosite" style="background-color: brown; width: 100px; height: 50px; color: white; border:none; border-radius: 25px;" onclick="qualificationLink();">자세히보기</button>
+                    </div>
+                    <div id="project_information2">
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">주요기능</div><p style="margin:0 0 0 20px;">각 컨텐츠에 대한 내용 및 각 사무소 홍보</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Frontend</div><p style="margin:0 0 0 20px;"> React, MUI, Typescript, css</p></div>
+                        <div style="display: flex; margin-bottom: 10px;"><img style="width: 15px; height: 15px;" src="../public/images/check.png"><div style="width: 100px;">Deployment</div><p style="margin:0 0 0 20px;">Docker, AWS</p></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-</div>
-<script src="../public/javascripts/projectSlide.js"></script>
-<script src="../public/javascripts/projectLink.js"></script>
+    <script src="../public/javascripts/projectSlide.js"></script>
+    <script src="../public/javascripts/projectLink.js"></script>
 </body>
 </html>

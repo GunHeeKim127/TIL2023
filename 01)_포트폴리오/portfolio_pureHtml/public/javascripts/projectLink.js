@@ -1,3 +1,9 @@
 function gotoLink(){
-    window.open('https://keen-lokum-b95609.netlify.app/');
+    window.open('https://kimgunhee-portpolio.netlify.app');
+}
+function starmainLink(){
+    window.open('https://main.star-law.com');
+}
+function qualificationLink(){
+    window.open('https://qualification.star-workout.com/chatbot')
 }
