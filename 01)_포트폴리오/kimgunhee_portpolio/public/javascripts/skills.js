@@ -1,9 +1,3 @@
-// $(document).ready(function(){
-//     document.getElementById("skills").innerHTML
-//     ='<object type="text/html" data="./view/skills.html" style="height:542px; width:100%;"></object>';
-//     document.getElementById("skills").style.height="742px"
-// })
-
 // public/javascripts/skills.js
 (function () {
   // 내부 문서 높이를 읽어 object 높이에 반영
